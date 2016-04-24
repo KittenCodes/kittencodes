@@ -1,0 +1,320 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron:400', 'Quicksand', 'Ubuntu', sans-serif;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+    font-size: 12pt;
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: #007f97;
+	font-size: 35pt;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	color: #007f97;
+	font-size: 20pt;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+
+/* HEADER BUTTONS */
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  /* box-shadow: 0 0 2px #8db4c6; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #a4bcbc;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+	/* WELCOME */
+
+.welcome {
+    background: #007f97; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #7c587f, #007f97); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #7c587f, #007f97); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #7c587f, #007f97); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #7c587f, #007f97); /* Standard syntax (must be last) */
+    position:relative;
+    padding-left: 40px;
+    padding-right:40px;
+}
+
+.welcome h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: #a4bcbc;
+	font-size: 50pt;
+}
+
+.welcome .content {
+	position: relative;
+	margin-top: 100px;
+}
+
+.welcome img {
+	display: inline;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+    border: 2px solid #a4bcbc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#title, #blurb {
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+}
+
+.welcome .col-md-12 {
+    vertical-align: middle;
+    text-align: center;
+    padding: 0px 100px 0px 100px;
+}
+
+.welcome .col-md-4 {
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+
+#welcome-image {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #a4bcbc;
+}
+
+.welcome ul.menu {list-style: none; margin: 0; padding: 0; text-transform: uppercase; font-size: 12pt; font-style: 'Ubuntu', sans-serif;} 
+.welcome ul.menu li {display: inline-block; margin: 0; padding: 10px; text-align: center; }  
+.welcome ul.menu li a {color: #a4bcbc; margin: 0; padding: 0; } 
+.welcome ul.menu li a:hover {text-decoration: none;}
+
+/* PORTFOLIO */
+
+.portfolio {
+	padding:10px 0 30px 0; 
+	position: relative; 
+}
+
+#portfolio-header {
+	margin-bottom: 20px;
+}
+
+.portfolio .col-md-12 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.portfolio ul {
+  padding-left: 20px;
+  font-size: 12pt;
+}
+
+.portfolio-graphics {
+	margin-top: 20px;
+}
+
+/* ABOUT */
+
+.about {
+	padding:10px 0 30px 0;
+	position: relative; 
+	background-color: #fff;
+	background: url("../images/fractal.png") no-repeat center center;
+	background-size: cover;
+}
+
+#about_container {
+	position: relative; 
+	margin: 0 auto;
+}
+
+.about .col-md-12 {
+	text-align: left;
+}
+
+.about a {
+	color: #007f97;
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+}
+
+
+/* SKILLS */
+
+.skillscat {
+	width: 75px;
+}
+
+.skills-language {
+	width: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.greyimage {
+	opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
+    width: 75px;
+}
+
+.skills h5 {
+	font-size: 10pt;
+	color: #007f97;
+	text-transform: uppercase;
+}
+
+.skills table {
+	width: 100%;
+}
+
+.skills thead td {
+	text-align: center;
+	vertical-align: top;
+}
+
+.skills tbody td {
+	padding: 5px;
+	text-align: center;
+}
+
+
+.skills img {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;	
+}
+
+h3 {
+	color: #8c9c09;
+}
+
+/* CONTACT */
+
+.contact {
+	padding:10px 0 20px 0; 
+	position: relative; 
+    background: #4c3f77; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #4c3f77, #051126); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #4c3f77, #051126); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #4c3f77, #051126); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #4c3f77, #051126); /* Standard syntax (must be last) */
+    color: #a4bcbc;
+}
+
+.contact .col-md-12 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.contact h1 {
+	color: #a4bcbc;
+}
+
+.contact .col-md-12 a {
+	color: #a4bcbc;
+	font-size: 12pt;
+}
+
+#fb, #in, #ig, #gh {
+	color: #a4bcbc;
+	font-size: 12pt;
+	text-decoration: none;
+	padding: 10px;
+}
+
+#social {
+	text-align: center;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+
+/* FOOTER */
+
+.footer { 
+    position:relative;
+    padding: 20px 40px;
+}
+
+.footer-portfolio { 
+	position: relative; 
+    background: #007f97; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #7c587f, #007f97); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #7c587f, #007f97); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #7c587f, #007f97); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #7c587f, #007f97); /* Standard syntax (must be last) */
+    padding: 20px 40px;
+}
+
+.footer-portfolio a, .footer-portfolio i {
+	color: #a4bcbc;
+}
+
+#footer_container {
+	position: relative; 
+	margin: 0 auto;
+	text-align: center;
+}
+
+#footer-right {
+	text-align: right;
+	color: #a4bcbc;
+}
+
+#footer-email {
+	text-align: left;
+	padding: 6px 0 6px 0;
+}
+
+.footer-portfolio ul.menu {list-style: none; margin: 0; padding: 0; text-transform: uppercase; font-size: 12pt; font-style: 'Ubuntu', sans-serif;} 
+.footer-portfolio ul.menu li {display: inline-block; margin: 0; padding: 10px; text-align: center; }  
+.footer-portfolio ul.menu li a {color: #a4bcbc; margin: 0; padding: 0; } 
+.footer-portfolio ul.menu li a:hover {text-decoration: none;}
