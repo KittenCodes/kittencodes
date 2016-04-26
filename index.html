@@ -14,15 +14,15 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/image-hover.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
-
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Orbitron:400,900,700,500|Ubuntu|Quicksand' rel='stylesheet' type='text/css'>
 
     <!-- JavaScript -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>   
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
     <script src="js/starlight.js"></script>
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
     
     <!-- Favicon -->
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
@@ -100,7 +100,6 @@
 </div>
 
 <span class="anchor" id="portfolio-anchor"></span>
-
 	<div class="portfolio">
         <div class="container" id="row_container">
             <div class="row">
@@ -162,7 +161,23 @@
     </div> 
 </div>
 
-    <span class="anchor" id="about-anchor"></span>
+<span class="anchor" id="snippet-anchor"></span>
+    <div class="snippet">
+        <div class="container" id="row_container">
+            <div class="row">
+                <div class="col-md-12" id="snippet-header">
+                    <h1>Code Snippets</h1>
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="fancybox img-responsive thumbnail" data-fancybox-title="Mini JavaScript game about Lemmings." href="snippets/lemming.png"><img src="snippets/lemming.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<span class="anchor" id="about-anchor"></span>
     <div class="about" id="about_container">
         <div class="container">
             <div class="row">
@@ -355,6 +370,18 @@
             </div>
         </div>
     </div>
+
+<script type="text/javascript">
+$(".fancybox").fancybox({
+    helpers : {
+        title: {
+            type: 'inside',
+            position: 'bottom'
+        }
+    }
+});
+</script>
+
 </body>
 
 </html>
